@@ -17,7 +17,7 @@ namespace HoloFit_VrTest.Controllers
         [SerializeField] float _horizontalSpeed = 1f;
         [SerializeField] float _verticalSpeed = 1f;
         
-        public IInputReader Input { get; private set; }
+        public IInputReader Input { get; set; }
         public IMover Mover { get; private set; }
         public IRotator RotatorX { get; private set; }
         public IRotator RotatorY { get; private set; }

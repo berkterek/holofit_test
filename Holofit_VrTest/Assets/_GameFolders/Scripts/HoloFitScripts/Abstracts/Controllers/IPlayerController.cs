@@ -6,7 +6,7 @@ namespace HoloFit_VrTest.Abstracts.Controllers
 {
     public interface IPlayerController : IEntityController
     {
-        IInputReader Input { get; }
+        IInputReader Input { get; set; }
         IMover Mover { get; }
         IRotator RotatorX { get; }
         IRotator RotatorY { get; }
