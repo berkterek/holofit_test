@@ -128,30 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3883273315942892472, guid: f23ccc69ded57574ca4f8ef39a9488de, type: 3}
   m_PrefabInstance: {fileID: 1693867490}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &848244684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6165368451990707907, guid: 832328ec045603e4aad75ddca38b0deb, type: 3}
-  m_PrefabInstance: {fileID: 6165368452621146389}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &848244685
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848244684}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ac83adc21c8ff149b162443406170da, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &866654491
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +160,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1307001736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9184028726768855659, guid: 832328ec045603e4aad75ddca38b0deb, type: 3}
+  m_PrefabInstance: {fileID: 6165368452621146389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1551369040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1935810646049864032, guid: b512976fa9bc8f3459a9751d47d93eff, type: 3}
@@ -391,6 +372,10 @@ PrefabInstance:
       propertyPath: _moveSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1981672367, guid: 09c0bc3b8d64b2842a605f5fb79e4b92, type: 3}
+      propertyPath: _layerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 439239504238833098, guid: 09c0bc3b8d64b2842a605f5fb79e4b92, type: 3}
       propertyPath: m_Name
       value: Player_WithoutVr
@@ -520,6 +505,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 225401639, guid: 832328ec045603e4aad75ddca38b0deb, type: 3}
+      propertyPath: _fillerSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 744657040, guid: 832328ec045603e4aad75ddca38b0deb, type: 3}
+      propertyPath: _canvasObject
+      value: 
+      objectReference: {fileID: 1307001736}
     - target: {fileID: 6165368453321987932, guid: 832328ec045603e4aad75ddca38b0deb, type: 3}
       propertyPath: m_Name
       value: TargetObject

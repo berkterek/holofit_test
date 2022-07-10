@@ -14,7 +14,7 @@ namespace HoloFit_VrTest.Movements
         public RotatorY(IPlayerController playerController)
         {
             _playerController = playerController;
-            _transform = playerController.CameraTransform;
+            _transform = playerController.PlayerCamera.transform;
         }
         
         public void Tick()

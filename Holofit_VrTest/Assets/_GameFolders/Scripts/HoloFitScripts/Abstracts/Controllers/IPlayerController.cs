@@ -13,6 +13,8 @@ namespace HoloFit_VrTest.Abstracts.Controllers
         float MoveSpeed { get; }
         float HorizontalSpeed { get; }
         float VerticalSpeed { get; }
-        Transform CameraTransform { get; }
+        Camera PlayerCamera { get; }
+        float SelectDistance { get; }
+        LayerMask LayerMask { get; }
     }
 }
