@@ -21,15 +21,23 @@ namespace HoloFit_VrTest.Combats
             Ray ray = _playerController.PlayerCamera.ViewportPointToRay(Vector3.one / 2f);
             RaycastHit[] raycastHits = Physics.RaycastAll(ray, 10f,_playerController.LayerMask);
 
-            
             if (raycastHits.Length != 0)
             {
+                if (raycastHits.Length < _targetControllers.Count)
+                {
+                    for (int i = raycastHits.Length - 1; i < _targetControllers.Count; i++)
+                    {
+                        _targetControllers[i].SetTargetProcess(false);
+                        _targetControllers.RemoveAt(i);
+                    }
+                }
+                
                 foreach (var raycastHit in raycastHits)
                 {
                     if (raycastHit.collider.TryGetComponent(out ITargetController targetController))
                     {
                         targetController.SetTargetProcess(true);
-
+                        
                         if (!_targetControllers.Contains(targetController))
                         {
                             _targetControllers.Add(targetController);

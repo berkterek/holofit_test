@@ -60,6 +60,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 848244688}
+  _collider: {fileID: 3568350264099431747}
+  _canvasObject: {fileID: 9184028726768855659}
+  _fillerTargetController: {fileID: 225401639}
 --- !u!1001 &6165368452053905399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,6 +363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d76c24a7784d5964fba34849c55a1c1a, type: 3}
+--- !u!1 &9184028726768855659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097333631137028964, guid: d76c24a7784d5964fba34849c55a1c1a, type: 3}
+  m_PrefabInstance: {fileID: 6165368452770001167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &9184028726768855655 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3097333631137028968, guid: d76c24a7784d5964fba34849c55a1c1a, type: 3}
@@ -431,5 +439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 6115310084377680009}
+  _collider: {fileID: 225401640}
   _fillerImage: {fileID: 6165368453873733741}
-  _fillerSpeed: 0
+  _fillerSpeed: 0.5
